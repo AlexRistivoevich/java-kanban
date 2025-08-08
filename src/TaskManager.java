@@ -81,7 +81,6 @@ public class TaskManager {
         ArrayList<Subtask> subtaskList = epic.getSubtaskList();
         subtaskList.remove(oldSubtask);
         subtaskList.add(subtask);
-        epic.setSubtaskList(subtaskList);
         updateEpicStatus(epic);
         return subtask;
     }
